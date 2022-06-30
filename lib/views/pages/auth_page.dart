@@ -114,25 +114,25 @@ class _AuthPageState extends State<AuthPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
-                      height: 80.0,
-                      width: 80.0,
+                      height: 40.0,
+                      width: 40.0,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(16.0),
-                        color: Colors.white,
+                        color: Colors.transparent,
                       ),
-                      child: Image.asset('assets/images/google.png'),
+                      child: Image.asset('assets/images/google.png',fit: BoxFit.cover),
                     ),
                     const SizedBox(
-                      width: 16.0,
+                      width: 20.0,
                     ),
                     Container(
-                      height: 80.0,
-                      width: 80.0,
+                      height: 40.0,
+                      width: 40.0,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(16.0),
-                        color: Colors.white,
+                        color: Colors.transparent,
                       ),
-                      child: Image.asset('assets/images/facebook.png'),
+                      child: Image.asset('assets/images/facebook.png',fit: BoxFit.cover),
                     )
                   ],
                 ),
