@@ -1,5 +1,5 @@
-import 'package:e_commerce/model/product.dart';
-import 'package:e_commerce/utilities/assets.dart';
+
+import '../../model/product.dart';
 import 'package:flutter/material.dart';
 
 class ListItemHome extends StatelessWidget {
@@ -9,7 +9,7 @@ class ListItemHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DecoratedBox(
-      decoration: BoxDecoration(),
+      decoration: const BoxDecoration(),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -71,12 +71,24 @@ class ListItemHome extends StatelessWidget {
           const SizedBox(
             height: 6.0,
           ),
-          Text(
-            '${product.price}\$',
-            style: Theme.of(context)
-                .textTheme
-                .subtitle2!
-                .copyWith(color: Colors.grey),
+          Text.rich(
+            TextSpan(
+              children: [
+                TextSpan(
+                  text: '${product.price}\$',
+                  style: Theme.of(context).textTheme.subtitle2!.copyWith(
+                        color: Colors.grey,
+                        decoration: TextDecoration.lineThrough,
+                      ),
+                ),
+                TextSpan(
+                  text: ' ${product.price * (product.discountValue)/100}\$',
+                  style: Theme.of(context).textTheme.subtitle2!.copyWith(
+                        color: Colors.red,
+                      ),
+                )
+              ],
+            ),
           ),
         ],
       ),

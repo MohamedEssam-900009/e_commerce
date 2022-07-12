@@ -1,4 +1,4 @@
-import 'package:e_commerce/views/pages/home_page.dart';
+import 'home_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent-tab-view.dart';
@@ -15,7 +15,7 @@ class _BottomNavbarState extends State<BottomNavbar> {
 
     List<Widget> _buildScreens() {
         return [
-          HomePage(),
+          const HomePage(),
           Container(),
           Container(),
           Container(),
@@ -28,32 +28,32 @@ class _BottomNavbarState extends State<BottomNavbar> {
             PersistentBottomNavBarItem(
                 icon: const Icon(CupertinoIcons.home),
                 title: ("Home"),
-                activeColorPrimary:Color(0xFFDB3022),
+                activeColorPrimary:const Color(0xFFDB3022),
                 inactiveColorPrimary: CupertinoColors.systemGrey,
                 
             ),
             PersistentBottomNavBarItem(
                 icon: const Icon(CupertinoIcons.bag),
                 title: ("Shop"),
-              activeColorPrimary: Color(0xFFDB3022),
+              activeColorPrimary: const Color(0xFFDB3022),
                 inactiveColorPrimary: CupertinoColors.systemGrey,
             ),
             PersistentBottomNavBarItem(
                 icon: const Icon(CupertinoIcons.shopping_cart),
                 title: ("Cart"),
-                activeColorPrimary: Color(0xFFDB3022),
+                activeColorPrimary: const Color(0xFFDB3022),
                 inactiveColorPrimary: CupertinoColors.systemGrey,
             ),
             PersistentBottomNavBarItem(
                 icon: const Icon(Icons.favorite_border),
                 title: ("Cart"),
-                activeColorPrimary: Color(0xFFDB3022),
+                activeColorPrimary: const Color(0xFFDB3022),
                 inactiveColorPrimary: CupertinoColors.systemGrey,
             ),
             PersistentBottomNavBarItem(
                 icon: const Icon(CupertinoIcons.profile_circled),
                 title: ("Profile"),
-                activeColorPrimary: Color(0xFFDB3022),
+                activeColorPrimary: const Color(0xFFDB3022),
                 inactiveColorPrimary: CupertinoColors.systemGrey,
             ),
         ];

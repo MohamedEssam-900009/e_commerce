@@ -1,11 +1,11 @@
-import 'package:e_commerce/utilities/assets.dart';
+import '../utilities/assets.dart';
 
 class Product {
   final String id;
   final String title;
   final int price;
   final String imageUrl;
-  final int? discountValue;
+  final int discountValue;
   final String category;
   final double? rate;
 
@@ -14,59 +14,58 @@ class Product {
     required this.title,
     required this.price,
     required this.imageUrl,
-    this.discountValue,
+    this.discountValue = 0,
     this.category = 'Other',
     this.rate,
   });
-
-  
 }
+
 List<Product> dummyProducts = [
-    Product(
+  Product(
+    id: '1',
+    title: 'T-Shirt',
+    price: 12,
+    imageUrl: AppAssests.tempProductAsset1,
+    category: 'Clothes',
+    discountValue: 20,
+  ),
+  Product(
       id: '1',
       title: 'T-Shirt',
       price: 12,
       imageUrl: AppAssests.tempProductAsset1,
       category: 'Clothes',
-      discountValue: 20,
-    ),
-    Product(
-        id: '1',
-        title: 'T-Shirt',
-        price: 12,
-        imageUrl: AppAssests.tempProductAsset1,
-        category: 'Clothes',
-        discountValue: 20),
-    Product(
-      id: '1',
-      title: 'T-Shirt',
-      price: 12,
-      imageUrl: AppAssests.tempProductAsset1,
-      category: 'Clothes',
-      discountValue: 20,
-    ),
-    Product(
-      id: '1',
-      title: 'T-Shirt',
-      price: 12,
-      imageUrl: AppAssests.tempProductAsset1,
-      category: 'Clothes',
-      discountValue: 20,
-    ),
-    Product(
-      id: '1',
-      title: 'T-Shirt',
-      price: 12,
-      imageUrl: AppAssests.tempProductAsset1,
-      category: 'Clothes',
-      discountValue: 20,
-    ),
-    Product(
-      id: '1',
-      title: 'T-Shirt',
-      price: 12,
-      imageUrl: AppAssests.tempProductAsset1,
-      category: 'Clothes',
-      discountValue: 20,
-    ),
-  ];
+      discountValue: 20),
+  Product(
+    id: '1',
+    title: 'T-Shirt',
+    price: 12,
+    imageUrl: AppAssests.tempProductAsset1,
+    category: 'Clothes',
+    discountValue: 20,
+  ),
+  Product(
+    id: '1',
+    title: 'T-Shirt',
+    price: 12,
+    imageUrl: AppAssests.tempProductAsset1,
+    category: 'Clothes',
+    discountValue: 20,
+  ),
+  Product(
+    id: '1',
+    title: 'T-Shirt',
+    price: 12,
+    imageUrl: AppAssests.tempProductAsset1,
+    category: 'Clothes',
+    discountValue: 20,
+  ),
+  Product(
+    id: '1',
+    title: 'T-Shirt',
+    price: 12,
+    imageUrl: AppAssests.tempProductAsset1,
+    category: 'Clothes',
+    discountValue: 20,
+  ),
+];

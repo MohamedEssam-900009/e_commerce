@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class MainButton extends StatelessWidget {
   final String text;
   final VoidCallback onTap;
-  MainButton({Key? key, required this.text, required this.onTap})
+  const MainButton({Key? key, required this.text, required this.onTap})
       : super(key: key);
 
   @override
@@ -16,9 +16,8 @@ class MainButton extends StatelessWidget {
           text,
         ),
         onPressed: onTap,
-        style: ElevatedButton.styleFrom(
-          primary: Theme.of(context).primaryColor
-        ),
+        style:
+            ElevatedButton.styleFrom(primary: Theme.of(context).primaryColor),
       ),
     );
   }
